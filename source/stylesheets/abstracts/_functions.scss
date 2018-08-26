@@ -1,0 +1,14 @@
+// strips the unit of measure and returns it
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+// Calculate line height
+@function line-height($font-size: $base-font-size, $line-height: $base-line-height) {
+  @return (strip-unit($line-height) / strip-unit($font-size)) * 1;
+}
+
+
+@function em-calc($value) {
+  @return ($value/16px) * 1em;
+}

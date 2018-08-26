@@ -1,0 +1,84 @@
+// Establish Baseline
+html {
+  font-size: (($base-font-size / 16px) * 100%);
+}
+
+// Typographic Tags
+body {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  color: $font-color;
+  line-height: line-height();
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 1.5em 0;
+}
+
+strong {
+  font-weight: $font-weight-bold;
+}
+
+// Modular scale
+$typographic-element: (
+  h1: (
+    $ms-up-10,
+    $ms-up-3,
+    $ms-up-3
+  ),
+
+  h2: (
+    $ms-up-6,
+    $ms-up-2,
+    $ms-up-3
+  ),
+
+  h3: (
+    $ms-up-5,
+    $ms-up-1,
+    $ms-up-2
+  ),
+
+  h4: (
+    $ms-up-2,
+    $ms-up,
+    $ms-up-1
+  ),
+
+  h5: (
+    $ms-base,
+    $ms-base,
+    $ms-base
+  ),
+
+  h6: (
+    $ms-down,
+    $ms-down,
+    $ms-base
+  ),
+
+  p: (
+    $ms-base,
+    $ms-base,
+    $ms-base
+  ),
+);
+
+@each $element, $size in $typographic-element {
+  #{$element} {
+    font-size: nth($size, 1);
+
+    @media only screen and (max-width: 1024px) {
+      font-size: nth($size, 2);
+    }
+
+    @media only screen and (max-width: 425px) {
+      font-size: nth($size, 3);
+    }
+  }
+}
