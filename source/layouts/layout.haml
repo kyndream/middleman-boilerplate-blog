@@ -9,8 +9,19 @@
     %title= current_page.data.title || "Middleman"
     = stylesheet_link_tag "site"
     = javascript_include_tag "site"
+    %script{:src => "https://identity.netlify.com/v1/netlify-identity-widget.js"}
   %body
     = partial "partials/layout/navigation"
     %main
       = yield
     = partial "partials/layout/footer"
+    :javascript
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
