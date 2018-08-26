@@ -13,7 +13,8 @@ collections:
     folder: "source/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     delete: true # prevents users from deleting items in a collection
-    extension: html.markdown
+    extension: "html.md" # determines the file extension searched for when finding existing entries
+    format: frontmatter
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
