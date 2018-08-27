@@ -21,6 +21,7 @@ activate :autoprefixer do |prefix|
 end
 
 activate :directory_indexes
+# activate :asset_hash
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
@@ -33,7 +34,7 @@ activate :blog do |blog|
   # blog.taglink = "tags/{tag}.html"
   blog.layout = "blog_show"
   # blog.summary_separator = /(READMORE)/
-  # blog.summary_length = 250
+  blog.summary_length = 250
   # blog.year_link = "{year}.html"
   # blog.month_link = "{year}/{month}.html"
   # blog.day_link = "{year}/{month}/{day}.html"
@@ -51,9 +52,9 @@ end
 page "/feed.xml", layout: false
 
 # Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
+configure :development do
+  activate :livereload
+end
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -64,10 +65,7 @@ page "/feed.xml", layout: false
 
 # Build-specific configuration
 configure :build do
-  # Minify CSS on build
   activate :minify_css
-
-  # Minify Javascript on build
   activate :minify_javascript
   activate :minify_html
 end
