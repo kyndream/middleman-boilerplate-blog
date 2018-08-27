@@ -1,0 +1,28 @@
+.blog-show-container {
+  padding: 1em;
+
+  article {
+    em {
+      font-style: italic;
+    }
+
+    blockquote {
+      margin-left: 1em;
+      padding-left: 1em;
+      border-left: 2px solid $grey;
+      font-style: italic;
+    }
+
+    ul, ol {
+      margin-left: 2em;
+    }
+
+    ul {
+      list-style-type: disc;
+    }
+
+    ol {
+      list-style-type: decimal;
+    }
+  }
+}

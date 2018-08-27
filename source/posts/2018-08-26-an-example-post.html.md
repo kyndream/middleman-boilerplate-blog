@@ -8,7 +8,13 @@ Lorem ipsum dolor sit amet, consectetuer [adipiscing elit](http://www.google.com
 * Consectetuer adipiscing elit.
 * Nam at tortor quis ipsum tempor aliquet.
 
-Cum sociis natoque_ penatibus et magnis_ dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+Cum sociis natoque penatibus et *magnis dis* parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
+
+1. Lorem ipsum dolor sit amet.
+2. Consectetuer adipiscing elit.
+3. Nam at tortor quis ipsum tempor aliquet.
+
+Cum sociis natoque *penatibus et magnis* dis parturient montes, nascetur ridiculus mus. Suspendisse sed ligula. Sed volutpat odio non turpis gravida luctus. Praesent elit pede, iaculis facilisis, vehicula mattis, tempus non, arcu.
 
 > Donec placerat mauris commodo dolor. Nulla tincidunt. Nulla vitae augue.
 
