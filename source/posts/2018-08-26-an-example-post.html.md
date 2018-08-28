@@ -20,7 +20,9 @@ Cum sociis natoque *penatibus et magnis* dis parturient montes, nascetur ridicul
 
 Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
 
+![alt text](assets/images/blog/uploads/example.jpg "An example image")
 
+Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque porttitor mi id felis. Maecenas nec augue. Praesent a quam pretium leo congue accumsan.
 
 ## This is an H2
 
@@ -31,5 +33,3 @@ Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus 
 ##### This is an H5
 
 ###### This is an H6
-
-![alt text](assets/images/blog/uploads/photo.jpg "An example image")

@@ -24,5 +24,19 @@
     ol {
       list-style-type: decimal;
     }
+
+    img {
+      @include container(40em);
+      padding: 1em 0;
+      display: block;
+    }
+  }
+
+  @media only screen and (max-width: 1024px){
+    article{
+      img {
+        @include container(100%);
+      }
+    }
   }
 }
