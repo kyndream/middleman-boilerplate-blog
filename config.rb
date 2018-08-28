@@ -8,6 +8,7 @@
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+page '/feed.xml', layout: false
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
@@ -16,12 +17,16 @@ page '/*.txt', layout: false
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
-activate :autoprefixer do |prefix|
-  prefix.browsers = "last 2 versions"
-end
+set :css_dir, 'assets/stylesheets'
+set :js_dir, 'assets/javascripts'
+set :images_dir, 'assets/images'
 
 activate :directory_indexes
 # activate :asset_hash
+
+activate :autoprefixer do |prefix|
+  prefix.browsers = "last 2 versions"
+end
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
@@ -49,11 +54,16 @@ activate :blog do |blog|
   blog.page_link = "page/{num}"
 end
 
-page "/feed.xml", layout: false
-
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
+end
+
+# Build-specific configuration
+configure :build do
+  activate :minify_css
+  activate :minify_javascript
+  activate :minify_html
 end
 
 # Methods defined in the helpers block are available in templates
@@ -62,10 +72,3 @@ end
 #     "Helping"
 #   end
 # end
-
-# Build-specific configuration
-configure :build do
-  activate :minify_css
-  activate :minify_javascript
-  activate :minify_html
-end

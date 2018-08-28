@@ -32,4 +32,4 @@ Suspendisse ac pede. Cras tincidunt pretium felis. Cum sociis natoque penatibus 
 
 ###### This is an H6
 
-![alt text](images/blog/uploads/photo.jpg "An example image")
+![alt text](assets/images/blog/uploads/photo.jpg "An example image")

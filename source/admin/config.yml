@@ -5,7 +5,7 @@ backend:
 
 publish_mode: editorial_workflow
 
-media_folder: "source/images/blog/uploads" # folder where use uploaded files should go
+media_folder: "source/assets/images/blog/uploads" # folder where use uploaded files should go
 
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
